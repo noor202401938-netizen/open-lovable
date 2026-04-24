@@ -1,7 +1,45 @@
 # Open Lovable: The Coordination Layer for AI-Native Software
 
+## Table of Contents
+
+- [Part 1: Foundations](#part-1-foundations)
+- [Chapter 1: Architecture Overview - The System as Conversation](#chapter-1-architecture-overview---the-system-as-conversation)
+- [Chapter 2: Processing Natural Intent - The Intent Analyzer](#chapter-2-processing-natural-intent---the-intent-analyzer)
+- [Chapter 3: Content Extraction at Scale - Firecrawl Integration](#chapter-3-content-extraction-at-scale---firecrawl-integration)
+- [Chapter 4: The Provider Abstraction - Pluggable LLMs Without Coupling](#chapter-4-the-provider-abstraction---pluggable-llms-without-coupling)
+- [Part 2: The Generation Loop](#part-2-the-generation-loop)
+- [Chapter 5: Streaming Code Generation - Perceived Performance as Architecture](#chapter-5-streaming-code-generation---perceived-performance-as-architecture)
+- [Chapter 6: Context Selection - The Art of Smart File Inclusion](#chapter-6-context-selection---the-art-of-smart-file-inclusion)
+- [Chapter 7: Response Parsing - Extracting Files, Packages, and Actions from AI Output](#chapter-7-response-parsing---extracting-files-packages-and-actions-from-ai-output)
+- [Chapter 8: Structured Prompting - Guiding the LLM to Produce Usable Artifacts](#chapter-8-structured-prompting---guiding-the-llm-to-produce-usable-artifacts)
+- [Part 3: Application and Validation](#part-3-application-and-validation)
+- [Chapter 9: The Sandbox Abstraction - Execution as a Swappable Capability](#chapter-9-the-sandbox-abstraction---execution-as-a-swappable-capability)
+- [Chapter 10: Vite as the Inner Loop - Fast Feedback Under Uncertainty](#chapter-10-vite-as-the-inner-loop---fast-feedback-under-uncertainty)
+- [Chapter 11: Surgical Code Application - Precision Over Rewrite](#chapter-11-surgical-code-application---precision-over-rewrite)
+- [Chapter 12: Build Validation and Error Recovery - Closing the Loop](#chapter-12-build-validation-and-error-recovery---closing-the-loop)
+- [Part 4: State and Continuity](#part-4-state-and-continuity)
+- [Chapter 13: Conversation State Architecture - Memory as Product Behavior](#chapter-13-conversation-state-architecture---memory-as-product-behavior)
+- [Chapter 14: Project Memory - File Manifests and Structural Context](#chapter-14-project-memory---file-manifests-and-structural-context)
+- [Chapter 15: Preference Learning - Adaptive Editing Styles](#chapter-15-preference-learning---adaptive-editing-styles)
+- [Part 5: UI and Experience](#part-5-ui-and-experience)
+- [Chapter 16: Real-Time Sandbox Preview - Making Generation Tangible](#chapter-16-real-time-sandbox-preview---making-generation-tangible)
+- [Chapter 17: Error Communication - From Stack Traces to Decisions](#chapter-17-error-communication---from-stack-traces-to-decisions)
+- [Chapter 18: Motion and Micro-Feedback - UX for Waiting States](#chapter-18-motion-and-micro-feedback---ux-for-waiting-states)
+- [Part 6: Robustness and Operations](#part-6-robustness-and-operations)
+- [Chapter 19: Package Installation Strategy - Dependency Chaos Management](#chapter-19-package-installation-strategy---dependency-chaos-management)
+- [Chapter 20: Timeout and Deadline Management - Latency as a Resource](#chapter-20-timeout-and-deadline-management---latency-as-a-resource)
+- [Chapter 21: Fallback Patterns - Designing for Provider Failure](#chapter-21-fallback-patterns---designing-for-provider-failure)
+- [Part 7: Synthesis and Transfer](#part-7-synthesis-and-transfer)
+- [Chapter 22: Transferable Patterns - What to Steal, What to Avoid](#chapter-22-transferable-patterns---what-to-steal-what-to-avoid)
+- [Chapter 23: Building Your Own - A Decision Framework](#chapter-23-building-your-own---a-decision-framework)
+- [Epilogue: The Architectural Bet Revisited](#epilogue-the-architectural-bet-revisited)
+
+---
+
 ## Part 1: Foundations
 *Systems like this do not fail because the model is weak. They fail because the handoff between intent, generation, and execution is weak.*
+
+[Back to Table of Contents](#table-of-contents)
 
 ---
 
@@ -475,6 +513,8 @@ Part 1 established the system's architectural thesis: quality comes from the coo
 ## Part 2: The Generation Loop
 *The system earns trust when partial results arrive early, structure survives model variability, and context is chosen with intent.*
 
+[Back to Table of Contents](#table-of-contents)
+
 ---
 
 ## Chapter 5: Streaming Code Generation - Perceived Performance as Architecture
@@ -873,6 +913,8 @@ Part 2 established the executable core: stream generation, select context delibe
 
 ## Part 3: Application and Validation
 
+[Back to Table of Contents](#table-of-contents)
+
 Epigraph: Generated code is potential energy; runtime validation converts it into useful work.
 
 ## Chapter 9: The Sandbox Abstraction - Execution as a Swappable Capability
@@ -1176,6 +1218,8 @@ Part 3 converted generation output into executable behavior and reliable recover
 
 ## Part 4: State and Continuity
 
+[Back to Table of Contents](#table-of-contents)
+
 Epigraph: Intelligence without memory is improvisation; intelligence with memory becomes strategy.
 
 ## Chapter 13: Conversation State Architecture - Memory as Product Behavior
@@ -1376,6 +1420,8 @@ Part 4 explained how memory compounds quality across turns. Part 5 shifts to the
 
 ## Part 5: UI and Experience
 
+[Back to Table of Contents](#table-of-contents)
+
 Epigraph: Reliability is invisible until it fails; UX decides whether users stay during failure.
 
 ## Chapter 16: Real-Time Sandbox Preview - Making Generation Tangible
@@ -1574,6 +1620,8 @@ Pitfall: ignoring accessibility settings creates exclusion.
 Part 5 covered trust at the interface boundary. Part 6 turns back inward to robustness under real-world pressure: package chaos, timeouts, and provider degradation.
 
 ## Part 6: Robustness and Operations
+
+[Back to Table of Contents](#table-of-contents)
 
 Epigraph: Robust systems are not those that never fail, but those that fail in ways users can recover from.
 
@@ -1776,6 +1824,8 @@ Part 6 covered operational resilience. Part 7 closes the book by extracting reus
 
 ## Part 7: Synthesis and Transfer
 
+[Back to Table of Contents](#table-of-contents)
+
 Epigraph: A strong architecture teaches beyond itself.
 
 ## Chapter 22: Transferable Patterns - What to Steal, What to Avoid
@@ -1915,6 +1965,8 @@ Pitfall: no exit criteria means perpetual partial rewrites.
 ---
 
 ## Epilogue: The Architectural Bet Revisited
+
+[Back to Table of Contents](#table-of-contents)
 
 Open Lovable’s deepest insight is that AI-native products are coordination systems first and generation systems second. The model call is only one step. Durable value comes from the layers around it: intent modeling, context shaping, executable isolation, structured recovery, and cumulative memory.
 
